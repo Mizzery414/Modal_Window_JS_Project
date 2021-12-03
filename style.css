@@ -1,0 +1,82 @@
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  align-items: flex-start;
+  background: linear-gradient(to top left, #28b487, #7dd56f);
+  color: #333;
+  display: flex;
+  font-family: serif;
+  justify-content: center;
+  line-height: 1.5;
+  position: relative;
+}
+
+.show-modal {
+  background-color: #fff;
+  border: none;
+  border-radius: 10rem;
+  color: #444;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 5rem 2rem;
+  padding: 1.75rem 3.5rem;
+}
+
+.close-modal {
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  font-size: 5rem;
+  position: absolute;
+  right: 2rem;
+  top: 1.2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+p {
+  font-size: 1.8rem;
+}
+
+/* Classes to make Modal Work */
+.hidden {
+  display: none;
+}
+
+.modal {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  left: 50%;
+  padding: 6rem;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  z-index: 10;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  left: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+}
